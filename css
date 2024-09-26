@@ -1,0 +1,55 @@
+:root{
+  --colore-bg-hero:#B4D0E7;
+  --bottone-blu:#0061FF;
+  --grigio:#F5F5F5;
+  --verde:#A2D39B;
+  --rosso-sangue:#61082B;
+  --rosso-fuoco: #FF1C1C;
+  --viola: #FF1C1C;
+  --blu-mare: #0093CE;
+  --giallo: #FFD830;
+  --full-container: 100%;
+  --container: 1200px;
+  --min-container: 1000px;
+}
+
+/* GENERALS */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+}
+
+ul,
+ol{
+    list-style: none;
+}
+body {
+    font-family: 'Barlow', sans-serif;
+}
+img{
+  vertical-align: middle;
+}
+/* HEADER */
+.full-container{
+  margin: 20px,
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.dx-navbar{
+  display: flex;
+  gap: 45px;
+  vertical-align: middle;
+  line-height: 30px;
+}
+
+.sx-navbar{
+  display: flex;
+  gap: 45px;
+  line-height: 30px;
+}
+
