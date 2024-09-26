@@ -1,0 +1,11 @@
+:root{
+  --colore-bg-hero:#B4D0E7;
+  --bottone-blu:#0061FF;
+  --grigio:#F5F5F5;
+  --verde:#A2D39B;
+  --rosso-sangue:#61082B;
+  --rosso-fuoco: #FF1C1C;
+  --viola: #FF1C1C;
+  --blu-mare: #0093CE;
+  --giallo: #FFD830;
+}
