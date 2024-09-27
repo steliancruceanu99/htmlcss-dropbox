@@ -8,9 +8,6 @@
   --viola: #FF1C1C;
   --blu-mare: #0093CE;
   --giallo: #FFD830;
-  --full-container: 100%;
-  --container: 1200px;
-  --min-container: 1000px;
 }
 
 /* GENERALS */
@@ -19,7 +16,10 @@
     padding: 0;
     margin: 0 auto;
 }
-
+a{
+  color: currentColor;
+  text-decoration: none;
+}
 ul,
 ol{
     list-style: none;
@@ -29,27 +29,44 @@ body {
 }
 img{
   vertical-align: middle;
+  max-width: 100%;
 }
-/* HEADER */
+
+.button{
+  background-color: var(--bottone-blu);
+  padding: 0 15px;
+  color: white;
+}
+/* LAYOUT */
 .full-container{
-  margin: 20px,
+  max-width: 100%
 }
+.container{
+  margin: 1200px
+}
+.min-container{
+  margin: 100px
+} 
+
+/* HEADER */
+
 .navbar{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+  margin: 20px 40px;
+  font-size: 12px; 
 }
 .dx-navbar{
   display: flex;
   gap: 45px;
-  vertical-align: middle;
   line-height: 30px;
+  margin: 0;
 }
 
 .sx-navbar{
   display: flex;
   gap: 45px;
   line-height: 30px;
+  margin: 0;
 }
-
