@@ -8,6 +8,9 @@
   --viola: #FF1C1C;
   --blu-mare: #0093CE;
   --giallo: #FFD830;
+  --full-container:100%;
+  --container:1200px;
+  --min-container:1000px;
 }
 
 /* GENERALS */
@@ -31,23 +34,82 @@ img{
   vertical-align: middle;
   max-width: 100%;
 }
-
+h1{
+  font-size: 50px;
+}
+.hero.row{
+  margin: 15px;
+}
 .button{
   background-color: var(--bottone-blu);
   padding: 0 15px;
   color: white;
 }
+.display-flex{
+  display: flex;
+}
 /* LAYOUT */
 .full-container{
-  max-width: 100%
+  max-width: 100%;
 }
 .container{
-  margin: 1200px
+  width: 70%;
 }
 .min-container{
-  margin: 100px
+  margin: 100px;
 } 
 
+.col-16{
+  width: calc(100%/6);
+}
+.col-20{
+  width: 20%;
+}
+.col-25{
+  width: 20%;
+}
+.col-32{
+  width: calc((100%/6)*2);
+}
+.col-33{
+  width: calc(100%/3);
+}
+.col-50{
+  width: 50%;
+}
+.col-40{
+  width: 40%;
+}
+.col-60{
+  width: 60%;
+}
+.col-66{
+  width: calc((100%/3)*2);
+}
+.col-75{
+  height: 75%;
+}
+.col-80{
+  width: 80%;
+}
+.m-top{
+  margin-top: 20px;
+}
+.p-top-15{
+  padding-top: 15px;
+}
+.p-top-40{
+  padding-top: 40px;
+}
+.p-top-60{
+  padding-top: 60px;
+}
+.p-top-80{
+  padding-top: 80px;
+}
+.m-top-80{
+  margin: 80px;
+}
 /* HEADER */
 
 .navbar{
@@ -69,4 +131,10 @@ img{
   gap: 45px;
   line-height: 30px;
   margin: 0;
+}
+
+/* MAIN */
+.hero{
+  background-color: var(--colore-bg-hero);
+  width: var(--container);
 }
