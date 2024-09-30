@@ -8,16 +8,17 @@
   --viola: #FF1C1C;
   --blu-mare: #0093CE;
   --giallo: #FFD830;
-  --full-container:100%;
+  --full-container:1920px;
   --container:1200px;
   --min-container:1000px;
+  --small: 500px;
 }
 
 /* GENERALS */
 *{
     box-sizing: border-box;
     padding: 0;
-    margin: 0 auto;
+    margin: 0 ;
 }
 a{
   color: currentColor;
@@ -31,33 +32,51 @@ body {
     font-family: 'Barlow', sans-serif;
 }
 img{
-  vertical-align: middle;
   max-width: 100%;
 }
 h1{
   font-size: 50px;
 }
-.hero.row{
-  margin: 15px;
-}
-.button{
+
+.button-navbar{
   background-color: var(--bottone-blu);
   padding: 0 15px;
   color: white;
 }
+
+  /* display: inline-block;
+	background-color: var(--blue);
+	color: var(--white);
+	line-height: 44px;
+	padding: 0px 16px;
+	text-align: center; */
+
+
+.button{
+  background-color: var(--bottone-blu);
+  padding:12 15px;
+  color: white;
+  text-align: center;
+  line-height: 44px;
+}
+
 .display-flex{
   display: flex;
 }
+.row {
+	display: flex;
+	flex-wrap: wrap;
+
+}
 /* LAYOUT */
 .full-container{
-  max-width: 100%;
+  width: var(--full-container);
 }
 .container{
-  width: 70%;
+  display: flex;
+  width: var(--container);
+  margin: 0 auto;
 }
-.min-container{
-  margin: 100px;
-} 
 
 .col-16{
   width: calc(100%/6);
@@ -92,6 +111,9 @@ h1{
 .col-80{
   width: 80%;
 }
+.col-100{
+  width: 100%;
+}
 .m-top{
   margin-top: 20px;
 }
@@ -109,6 +131,19 @@ h1{
 }
 .m-top-80{
   margin: 80px;
+}
+
+.m-bot-20{
+  margin: 20px;
+} 
+
+.flex-col{
+  display: flex;
+  flex-direction: column;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
 }
 /* HEADER */
 
@@ -134,7 +169,29 @@ h1{
 }
 
 /* MAIN */
+
+/* HERO */
 .hero{
   background-color: var(--colore-bg-hero);
-  width: var(--container);
 }
+.hero-content{
+  gap: 20px;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+/* DEBUG RULES */
+.debug > .container {
+	border: 2px solid black;
+	padding: 20px;
+}
+.debug .row > * {
+	padding: 20px;
+	border: 2px solid red;
+}
+
+
+.debug [class^='col-'] {
+	border: 2px solid cornflowerblue;
+}
+
